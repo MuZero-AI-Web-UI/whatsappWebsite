@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <img src="./assets/img/logowai.png" alt="Logo de tu sitio" />
+      <img src="./assets/img/whatsappLogo.jpeg" alt="Logo de tu sitio" />
       <a href="signup.html">Login</a>
       <a href="#">Contact us</a>
       <a href="blog.html">Blog</a>
@@ -17,47 +17,91 @@
       <a href="ourSolution.html">Our solution</a>
     </nav>
 
+    <div class="container">
+      <div class="text-section">
+        <p>WELCOME TO YOUR NEW WHATSAPP AI TOOL</p>
+      </div>
+      <div class="button-section">
+        <button>Sign Up</button>
+      </div>
+    </div>
+
     <section>
       <h2>Secction 1</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
         merninisti licere mihi ista probare, quae sunt a te dicta?
       </p>
+      <!-- <button class="subscribe-button">Suscribirse</button> -->
     </section>
-
     <section>
       <h2>Secction 2</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne
         merninisti licere mihi ista probare, quae sunt a te dicta?
       </p>
-      <button class="subscribe-button">Suscribirse</button>
+      <!-- <button class="subscribe-button">Suscribirse</button> -->
     </section>
 
     <section id="geographiesSection">
       <h2>Geographies We Serve</h2>
       <!-- Contenido de la sección de Geografías -->
-      <div class="geographies">
-        <div class="geography-item">
-          <img src="flag1.png" alt="Country Flag 1" /> Country 1
-        </div>
-        <div class="geography-item">
-          <img src="flag2.png" alt="Country Flag 2" /> Country 2
-        </div>
-        <!-- Agrega más países según sea necesario -->
+      <div class="grid-container">
+        <div class="grid-item">&#x1F1F2;&#x1F1FD;</div>
+        <div class="grid-item">&#x1F1FA;&#x1F1F8;</div>
+        <div class="grid-item">&#x1F1E8;&#x1F1E6;</div>  
+        <div class="grid-item">&#x1F1E7;&#x1F1F7;</div> 
       </div>
-      <button class="subscribe-button">Suscribirse</button>
     </section>
 
     <section id="faqSection">
       <h2>FAQ Section</h2>
       <!-- Contenido de la sección FAQ -->
-      <p>This section contains frequently asked questions.</p>
-      <button class="subscribe-button">Suscribirse</button>
+      <div class="faq-section">
+        <div class="question" onclick="toggleAnswer(1)">
+          Pregunta 1 ............................................................ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+        <div class="answer" id="answer1">
+          Respuesta a la Pregunta 1.
+        </div>
+    
+        <div class="question" onclick="toggleAnswer(2)">
+          Pregunta 2 ............................................................ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+        <div class="answer" id="answer2">
+          Respuesta a la Pregunta 2.
+        </div>
+    
+        <div class="question" onclick="toggleAnswer(3)">
+          Pregunta 3 ............................................................ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+        <div class="answer" id="answer3">
+          Respuesta a la Pregunta 3.
+        </div>
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2024. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      function toggleAnswer(questionNumber) {
+        var answerId = "answer" + questionNumber;
+        var answer = document.getElementById(answerId);
+  
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
