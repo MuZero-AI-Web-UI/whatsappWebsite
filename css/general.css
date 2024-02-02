@@ -232,8 +232,8 @@ p{
     }
 
   footer {
-    background-color: #088908;
-    color: #fff;
+    background: rgb(75,79,85);
+    background: linear-gradient(0deg, rgba(75,79,85,1) 0%, rgba(166,166,166,1) 100%); overflow: hidden;
     padding: 10px;
     text-align: center;
     bottom: 0;
