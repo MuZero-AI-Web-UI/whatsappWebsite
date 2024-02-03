@@ -44,9 +44,9 @@ p{
     section {
     padding: 2rem;
     text-align: center;
-    width: 100%; /* Ajusta el ancho de las secciones al 50% del cuerpo */
+    width: 80%; /* Ajusta el ancho de las secciones al 50% del cuerpo */
     /*margin: auto; /* Centra las secciones horizontalmente */
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -223,6 +223,7 @@ p{
   margin-bottom: 20px;
     }
     .section--index{
+      width: 80%;
   background: rgb(189,191,197);
   background: linear-gradient(90deg, rgba(189,191,197,1) 0%, rgba(255,255,255,1) 100%); 
     }
@@ -240,8 +241,8 @@ p{
     width: 100%;
   }
   /* Estilos para hacer la página responsive */
-  @media (max-width: 768px) {
+  /* @media (max-width: 100%) {
     .location-map {
-        height: 200px;
+        height: 200%;
     }
-}
+} */
